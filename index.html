@@ -76,7 +76,7 @@
     if(!e.isTrusted) return; // to prevent fake click done with Javascript
     score++;
     this.classList.remove('up');
-    scoreboard.textContent = score;
+    scoreBoard.textContent = score;
   }
 
   moles.forEach(mole => mole.addEventListener('click', bonk));
