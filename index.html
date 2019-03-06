@@ -72,8 +72,8 @@
     setTimeout(() => timeUp = true, 10000);
   }
 
-  function bonk(e) {
-    if(!e.isTrusted) return; // to prevent fake click done with Javascript
+  function bonk(event) {
+    if(!event.isTrusted) return; // to prevent fake click done with Javascript
     score++;
     this.classList.remove('up');
     scoreBoard.textContent = score;
